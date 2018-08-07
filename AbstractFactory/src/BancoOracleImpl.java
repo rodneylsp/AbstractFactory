@@ -1,5 +1,5 @@
 
-public class BancoOracleImpl extends Oracle{
+public class BancoOracleImpl extends Oracle implements Banco{
 
 	public BancoOracleImpl() {
 		System.out.println("Banco Oracle criado!!");
@@ -7,6 +7,6 @@ public class BancoOracleImpl extends Oracle{
 
 	@Override
 	public void conectar() {
-		System.out.println("Conectando ao banco...");
+		System.out.println("Conectando ao Oracle...");
 	}
 }
