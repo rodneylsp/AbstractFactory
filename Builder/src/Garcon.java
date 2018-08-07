@@ -12,9 +12,7 @@ public class Garcon {
 	}
 	
 	public void construirPizza(){
-		pizzaBuilder.createNewPizza();
-		pizzaBuilder.buildMassa();
-		pizzaBuilder.buildMolho();
-		pizzaBuilder.buildCobertura();
+		pizzaBuilder.createNewPizza()
+		.buildMassa().buildMolho().buildCobertura();
 	}
 }

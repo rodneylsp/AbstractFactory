@@ -2,18 +2,21 @@
 public class CalabresaPizzaBuilder extends PizzaBuilder{
 
 	@Override
-	public void buildMassa() {
+	public PizzaBuilder buildMassa() {
 		pizza.setMassa("Crocante");
+		return this;
 	}
 
 	@Override
-	public void buildMolho() {
+	public PizzaBuilder buildMolho() {
 		pizza.setMolho("suave");
+		return this;
 	}
 
 	@Override
-	public void buildCobertura() {
+	public PizzaBuilder buildCobertura() {
 		pizza.setCobertura("calabresa + queijo");
+		return this;
 	}
 
 }

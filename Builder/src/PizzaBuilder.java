@@ -7,13 +7,14 @@ public abstract class PizzaBuilder {
 		return this.pizza;
 	}
 	
-	public void createNewPizza(){
+	public PizzaBuilder createNewPizza(){
 		pizza = new Pizza();
+		return this;
 	}
 	
-	public abstract void buildMassa();
+	public abstract PizzaBuilder buildMassa();
 	
-	public abstract void buildMolho();
+	public abstract PizzaBuilder buildMolho();
 	
-	public abstract void buildCobertura();
+	public abstract PizzaBuilder buildCobertura();
 }
